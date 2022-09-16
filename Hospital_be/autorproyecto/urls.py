@@ -27,7 +27,7 @@ urlpatterns = [
     path('Familiar/', views.CrearFamiliarView.as_view()),
     path('Paciente/', views.CrearPacienteView.as_view()),
     path('SignosVitales/', views.CrearSigVitalesView.as_view()),
-    path('ConsultaUsuario/<int:pk>/', views.ConsultUserView.as_view()),
+    path('ConsultaUsuario/<int:pk>', views.ConsultUserView.as_view()),
     path('ConsultarFamiliar/<int:pk>', views.ConsultFamiliarView.as_view()),
     path('ConsultarPaciente/<int:pk>', views.ConsultPacienteView.as_view())
 ]

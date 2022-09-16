@@ -5,4 +5,4 @@ from rest_framework import serializers
 class FamiliarSerializer(serializers.ModelSerializer):
     class Meta:
         model=Familiar
-        fields=('iduser','idPaciente','parentesco','correo')
+        fields=['iduser','idPaciente','parentesco','correo']

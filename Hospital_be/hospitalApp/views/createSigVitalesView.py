@@ -7,5 +7,5 @@ class CrearSigVitalesView(views.APIView):
         serializer = SigVitalesSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(SigVitalesSerializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST) 
